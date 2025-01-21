@@ -21,6 +21,7 @@
         login_password: ExpenseApp@1
         login_host: database.sridevsecops.store
       register: mysql_info
+      ignore_errors: true
     - name: Print the output
       ansible.builtin.debug:
         msg: "MySQL Info is : {{ mysql_info }}"
