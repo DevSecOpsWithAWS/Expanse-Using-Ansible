@@ -1,5 +1,6 @@
 - name: Configuring Backend server
   hosts: backend
+  become: yes
   tasks:
     - name: Disable nodejs old version
       ansible.builtin.command: "dnf module disable nodejs -y"
