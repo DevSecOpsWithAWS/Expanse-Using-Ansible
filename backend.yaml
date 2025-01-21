@@ -29,3 +29,7 @@
     - name: Install Dependencies
       community.general.npm:
         path: /app
+    - name: Copying Backend Service file
+      ansible.builtin.copy:
+        src: backend.service
+        dest: /etc/systemd/system/backend.service
