@@ -51,4 +51,3 @@
         login_password: ExpenseApp@1
         login_host: database.sridevsecops.store
         target: /app/schema/backend.sql
-        remote_src: yes
