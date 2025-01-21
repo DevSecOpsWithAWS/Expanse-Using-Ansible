@@ -2,6 +2,10 @@
   hosts: database
   become: yes
   tasks:
+    - name: installing MySQL Dependencies
+      ansible.builtin.pip:
+        name: PyMySQL
+        executable: pip3.9
     - name: Install MySQL server
       ansible.builtin.package:
         name: mysql-server
